@@ -61,4 +61,35 @@
         padding: 20px;
     }
 
+    .hero-title {
+
+    font-size: 48px !important;
+
+    line-height: 1.1;
+
+    text-align: center;
+
+    padding: 0 20px;
+
+    word-break: break-word;
+    }
+
+    .hero-description {
+
+    font-size: 18px !important;
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    text-align: center;
+    }
+
+    .search-box {
+
+    width: 90%;
+
+    margin: 0 auto;
+    }
+
 }
