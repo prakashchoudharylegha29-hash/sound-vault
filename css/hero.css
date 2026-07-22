@@ -1,0 +1,175 @@
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+
+    max-width: 700px;
+}
+
+.hero-title {
+    font-size: 60px;
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 22px;
+    color: #b3b3b3;
+
+    line-height: 1.6;
+}
+
+.hero-background {
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(170, 0, 255, 0.35),
+        rgba(0, 176, 255, 0.2),
+        transparent
+    );
+
+    filter: blur(80px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.search-box {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 35px auto 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+.search-input {
+    width: 550px;
+    max-width: 90%;
+
+    padding: 18px 25px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #1d1d1d;
+
+    color: white;
+
+    font-size: 18px;
+
+    outline: none;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.search-input::placeholder {
+    color: #9a9a9a;
+}
+
+
+.search-button {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 25px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #dc2626
+    );
+
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    transform: scale(1.08);
+}
+
+
+.clear-button {
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    color: white;
+
+    background: #dc2626;
+
+    transition: 0.3s;
+}
+
+.clear-button:hover {
+    transform: scale(1.08);
+}
+
+.search-wrapper {
+    position: relative;
+
+    width: 650px;
+
+    max-width: 90%;
+}
+
+#clear-button {
+    position: absolute;
+
+    right: 20px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #888;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: none;
+
+    user-select: none;
+}
+
+#clear-button:hover {
+    color: white;
+}
