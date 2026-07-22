@@ -53,8 +53,11 @@ function addToRecent(sound) {
     recentItem.dataset.file =
         sound.file;
 
-    recentItem.textContent =
-        "🎵 " + sound.title;
+    recentItem.innerHTML = `
+        <span>
+            🎵 ${sound.title}
+        </span>
+    `;
 
     recentItem.addEventListener(
         "click",

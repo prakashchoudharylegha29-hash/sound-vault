@@ -149,6 +149,8 @@
 
     min-width: 220px;
 
+    max-width: 220px;
+
     padding: 15px 20px;
 
     border-radius: 16px;
@@ -159,12 +161,34 @@
 
     font-size: 16px;
 
-    white-space: nowrap;
+    overflow: hidden;
 
     cursor: pointer;
 
     transition: 0.3s;
 }
+
+.recent-item span {
+
+    display: inline-block;
+
+    white-space: nowrap;
+
+    animation: recentTextMove 8s linear infinite;
+}
+
+@keyframes recentTextMove {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 .recent-item:hover {
 
