@@ -18,7 +18,7 @@
 }
 
 .hero-title {
-    font-size: 60px;
+    font-size: clamp(48px, 8vw, 90px);
     color: white;
 
     margin-bottom: 20px;
