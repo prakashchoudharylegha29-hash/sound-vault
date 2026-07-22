@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .logo-section {
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .creator-wrapper {
+
+        display: none;
+    }
+
+    .hero-title {
+
+        font-size: 55px;
+
+        line-height: 1.1;
+
+        text-align: center;
+    }
+
+    .hero-description {
+
+        font-size: 22px;
+
+        text-align: center;
+
+        padding: 0 20px;
+    }
+
+    .search-box {
+
+        width: 90%;
+    }
+
+    .search-wrapper {
+
+        width: 100%;
+    }
+
+    .search-input {
+
+        width: 100%;
+    }
+
+    .sound-card {
+
+        width: 95%;
+
+        padding: 20px;
+    }
+
+}
