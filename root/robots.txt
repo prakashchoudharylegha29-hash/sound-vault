@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://pcdeveloper-95.github.io/sound-vault/sitemap.xml
