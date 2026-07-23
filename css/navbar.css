@@ -65,35 +65,43 @@
 
 
 .creator-wrapper {
-    width: 280px;
+
+    flex: 1;
+
+    max-width: 320px;
 
     overflow: hidden;
 
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
+
 .creator-text {
+
+    display: inline-block;
+
+    white-space: nowrap;
+
+    min-width: max-content;
+
     font-size: 15px;
 
     font-weight: 700;
 
-    white-space: nowrap;
-
     background: linear-gradient(
         90deg,
+        #00c3ff,
         #6a5cff,
         #ff4d8d,
+        #ffb800,
         #00ff99
     );
 
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
 
     animation: creatorRun 12s linear infinite;
-
-    text-shadow: 0 0 15px rgba(0, 195, 255, 0.4);
-
-    letter-spacing: 1px;
 }
 
 @keyframes creatorRun {

@@ -93,3 +93,17 @@
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .creator-wrapper {
+
+        max-width: 140px;
+    }
+
+    .creator-text {
+
+        font-size: 13px;
+    }
+
+}

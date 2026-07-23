@@ -9,6 +9,7 @@
 
     position: relative;
     overflow: hidden;
+ 
 }
 
 .hero-content {
@@ -18,18 +19,57 @@
 }
 
 .hero-title {
-    font-size: clamp(48px, 8vw, 90px);
+
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size: clamp(40px, 8vw, 60px);
+
+    line-height: 1.1;
+
+    text-align: center;
+
     color: white;
 
     margin-bottom: 20px;
 }
 
-.hero-description {
-    font-size: 22px;
-    color: #b3b3b3;
+.hero-description-wrapper {
 
-    line-height: 1.6;
+    width: 100%;
+
+    overflow: hidden;
+
+    margin-top: 15px;
 }
+
+.hero-description {
+
+    display: inline-block;
+
+    white-space: nowrap;
+
+    color: #d0d0d0;
+
+    font-size: 20px;
+
+    animation: heroTextRun 15s linear infinite;
+}
+
+@keyframes heroTextRun {
+
+    0% {
+
+        transform: translateX(100%);
+    }
+
+    100% {
+
+        transform: translateX(-100%);
+    }
+}
+
 
 .hero-background {
     width: 500px;
@@ -54,22 +94,49 @@
     z-index: 1;
 }
 
-.search-box {
-    width: 100%;
+.hero-button {
+    margin-top: 30px;
 
-    max-width: 850px;
+    padding: 15px 35px;
 
-    margin: 35px auto 0;
+    border: none;
+    border-radius: 12px;
 
-    display: flex;
-    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
 
-    gap: 0px;
+    cursor: pointer;
+
+    background: linear-gradient(
+        90deg,
+        #ff4d4d,
+        #ff9900,
+        #ffd700,
+        #00c853,
+        #00b0ff,
+        #aa00ff
+    );
+
+    color: white;
+
+    transition: transform 0.3s ease;
 }
 
+.hero-button:hover {
+    transform: scale(1.05);
+}
+
+.search-box {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+}
 
 .search-input {
-    width: 550px;
+    width: 350px;
     max-width: 90%;
 
     padding: 18px 25px;
@@ -102,7 +169,7 @@
 
     cursor: pointer;
 
-    font-size: 25px;
+    font-size: 22px;
 
     color: white;
 
@@ -118,7 +185,6 @@
 .search-button:hover {
     transform: scale(1.08);
 }
-
 
 .clear-button {
     width: 60px;
@@ -147,7 +213,7 @@
 
     width: 650px;
 
-    max-width: 90%;
+    max-width: 40%;
 }
 
 #clear-button {
